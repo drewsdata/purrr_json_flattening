@@ -13,6 +13,6 @@ df_example_list_values <- example_nested_list %>%
       app_label = map_chr(.,"label"),
       app_status = map_chr(.,"status"),
       app_created = map_chr(.,"created"),
-      app_org = map_chr(., c(12,1,1,1), .null = NA_character_),
-      app_links = map_dfc(.,c(13,3), .null = NA_character_))
+      app_org = map_chr(., c(12,1,1,1), .null = NA_character_))
+      #app_links = map_dfc(.,c(13,3), .null = NA_character_))
   }
